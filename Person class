@@ -1,1 +1,25 @@
+class Person{
+    constructor(name, age, education, experience ){
+        this.name=name;
+        this.age=age;
+        this.education=education;
+        this.experience=experience;
+        this.sayIntro= function(){
+            console.log(`
+            Hi , I'm ${this.name}, I'm ${this.age} years old. I am an ${this.education} graduate and I have ${this.experience} years of experience in my field. Thank You for giving me this Wonderful oppurtunity
+            `);
+        }
+    }
+  
+};
+
+
+const Paartha= new Person("Paarthasaarathi", 22, "BBA", 1);
+Paartha.sayIntro();
+
+const Kevin= new Person("Kevin", 22, "BTech", 2);
+Kevin.sayIntro();
+
+const Harini= new Person("Harini", 24, "MBA", 3);
+Harini.sayIntro();
 
